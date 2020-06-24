@@ -1,16 +1,62 @@
+<!--
+    __  __  _____     _       _     _                  
+ |  \/  |/ ____|   | |     | |   | |                 
+ | \  / | |        | | __ _| |__ | | _____   ___ ____
+ | |\/| | |    _   | |/ _` | '_ \| |/ / _ \ / __|_  /
+ | |  | | |___| |__| | (_| | |_) |   < (_) | (__ / / 
+ |_|  |_|\_____\____/ \__,_|_.__/|_|\_\___(_)___/___|
+    
+Coded by Petr Václavek using ReactJS and a lots of love :)
+
+-->
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petr Václavek</title>
-</head>
-<body>
-    <div id="app">
-    </div>
-    <script src="react/dist/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/reactapp/src/obr/favicon.png">
+    <title>MCJabko.cz</title>
+    <style>
+      html {
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #d9534f;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d9534f;
+      }
+      img{
+        max-width: 100% !important;
+        max-height: 100%ˇ!important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script src="reactapp/dist/main.js"></script>
 </html>
