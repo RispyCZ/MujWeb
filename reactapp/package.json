@@ -1,9 +1,9 @@
 {
-    "name": "reacttest",
+    "name": "mcjabko",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "homepage": "./",
+    "homepage": "/",
     "scripts": {
         "build": "webpack --mode production",
         "dev": "webpack --mode development"

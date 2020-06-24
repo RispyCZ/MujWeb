@@ -11,7 +11,7 @@ export default function err404() {
             <Grid container>
                 <Grid item xs={12}>
                     <Paper style={{padding: "25px", margin: "25px"}}>
-                        <Typography variant="h3" component="h3" align="center">Vypadato že stránka nexistuje</Typography>
+                        <Typography variant="h3" component="h3" align="center">Vypadáto že stránka nexistuje</Typography>
                     </Paper>
                 </Grid>
             </Grid>
