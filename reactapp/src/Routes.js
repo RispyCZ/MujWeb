@@ -10,7 +10,6 @@ import Faq from './Pages/Faq/Faq';
 import About from './Pages/About/About';
 import AdminTeam from './Pages/AdminTeam/AdminTeam';
 import Wiki from './Pages/Wiki/Wiki';
-import Error404 from './Pages/err404';
 //import Contact from './Pages/Contact/Contact';
 
 function Routes() {
