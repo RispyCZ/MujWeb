@@ -44,11 +44,6 @@ function Routes() {
                                 <AdminTeam />
                             </Suspense>
                         </Route>
-                        <Route path="*">
-                            <Suspense fallback="Načítám obsah...">
-                                <Error404/>
-                            </Suspense>
-                        </Route>
                         <Route path="/">
                             <Suspense fallback="Načítám obsah...">
                                 <Home />

@@ -1,9 +1,10 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
 import { Typography, Grid, Container, Paper } from '@material-ui/core'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Navbar from '../Components/Navbar/Navbar'
-export default function err404() {
+function Err404() {
     return (
         <>
             <Navbar />
@@ -19,3 +20,5 @@ export default function err404() {
         </>
     )
 }
+
+ReactDOM.render(<Err404 />, document.getElementById("err"));
