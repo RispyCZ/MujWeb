@@ -4,7 +4,7 @@ export default class OnlinePlayers extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            error: null,
+            error: false,
             isLoaded: false,
             players: []
         };
@@ -15,10 +15,13 @@ export default class OnlinePlayers extends React.Component {
             .then(res => res.json())
             .then(
                 (result) => {
-                    this.setState({
-                        isLoaded: true,
-                        players: result.players
-                    });
+                    if (result.online != "false") {
+                        this.setState({
+                            isLoaded: true,
+                            players: result.players
+                        });
+                    }
+
                 },
                 (error) => {
                     this.setState({
@@ -30,10 +33,10 @@ export default class OnlinePlayers extends React.Component {
 
     render() {
         const { error, isLoaded, players } = this.state
-        if (error || !isLoaded) {
-            return <span>0</span>
+        if (error ||  !isLoaded || typeof players === 'undefined') {
+           return <span>0</span>
         } else {
-            return <span>{players.online}</span>
+           return <span>{players.online}</span>
         }
     }
 }
