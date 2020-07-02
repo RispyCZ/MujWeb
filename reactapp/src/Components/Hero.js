@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Button, Grid, Container, Tooltip } from '@material-ui/core';
-import { createPopper } from '@popperjs/core';
 import HeroImage from '../obr/hero.jpg';
 import OnlinePlayers from './OnlinePlayers';
 

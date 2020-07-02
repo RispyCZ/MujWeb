@@ -27,7 +27,7 @@ export default function Rules() {
                         {rules.map((item) => {
                             const { index, text } = item;
                             return (
-                                <ListItem button key={text}>
+                                <ListItem button key={index}>
                                     <ListItemText primary={index + ". " + text} />
                                 </ListItem>
                             );

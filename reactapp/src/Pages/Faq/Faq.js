@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer';
-import { Grid, Typography, Paper, List, ListItem, ListItemText, Collapse, Container, ExpansionPanel, ExpansionPanelSummary } from '@material-ui/core';
+import { Grid, Typography, Paper, Container, ExpansionPanel, ExpansionPanelSummary } from '@material-ui/core';
 import {
     ExpandMore as ExpandIcon
 } from '@material-ui/icons'
@@ -34,14 +34,17 @@ export default function Faq() {
                         const { index, question, answer } = item;
                         return (
                             <>
+
                                 <ExpansionPanel TransitionProps={{ unmountOnExit: true }}>
                                     <ExpansionPanelSummary expandIcon={<ExpandIcon />} aria-controls={index + "-content"} id={index + "-header"}>
-                                        <Typography>{index+". "+question}</Typography>
+                                        <Typography>{index + ". " + question}</Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelSummary>
                                         <Typography className={classes.answer}>{answer}</Typography>
                                     </ExpansionPanelSummary>
                                 </ExpansionPanel>
+
+
                             </>
                         );
 
