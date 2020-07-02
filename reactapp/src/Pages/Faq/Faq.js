@@ -9,6 +9,7 @@ import {
 } from '@material-ui/icons'
 import faq from './FaqContent';
 import Header from '../../Components/Header';
+import { Helmet } from 'react-helmet';
 
 const useStyles = makeStyles((theme) => ({
     box: {
@@ -25,13 +26,16 @@ export default function Faq() {
     const classes = useStyles();
     return (
         <>
+            <Helmet>
+                <title>MCJabko.cz &bull; FAQ</title>
+            </Helmet>
             <Navbar />
             <Header />
             <Typography variant="h3" align="center">FAQ</Typography>
             <Container>
                 <Paper className={classes.box}>
                     {faq.map((item) => {
-                        const {index, question, answer } = item;
+                        const { index, question, answer } = item;
                         return (
                             <div key={index}>
                                 <ExpansionPanel TransitionProps={{ unmountOnExit: true }}>

@@ -5,6 +5,7 @@ import Header from '../../Components/Header'
 import { makeStyles } from '@material-ui/styles'
 import { Grid, Paper, Typography, Container, Card, CardActionArea, CardContent, CardMedia, Chip } from '@material-ui/core'
 import Admins from './AdminTeamContent';
+import { Helmet } from 'react-helmet';
 
 const useStyles = makeStyles((theme) => ({
     box: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         display: "block",
         margin: "25px auto"
     },
-    card : {
+    card: {
         margin: "25px 0",
         textAlign: "center"
     }
@@ -29,6 +30,9 @@ export default function AdminTeam() {
     const classes = useStyles();
     return (
         <>
+            <Helmet>
+                <title>MCJabko.cz &bull; Pravidla</title>
+            </Helmet>
             <Navbar />
             <Header />
             <Typography variant="h3" align="center">Admin Team</Typography>

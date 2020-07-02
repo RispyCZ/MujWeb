@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Paper, Container } from '@material-ui/core';
 import Navbar from '../../Components/Navbar/Navbar';
 import Hero from '../../Components/Hero';
+import { Helmet } from 'react-helmet';
 import { People as PeopleIcon, TagFaces as TagFacesIcon, Storage as ServerIcon } from '@material-ui/icons';
 import Footer from '../../Components/Footer';
 const useStyles = makeStyles((theme) => ({
@@ -20,6 +21,9 @@ export default function Home() {
     const classes = useStyles();
     return (
         <>
+            <Helmet>
+                <title>MCJabko.cz &bull; Domů</title>
+            </Helmet>
             <Navbar />
             <Hero />
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '25px 0' }}>

@@ -9,6 +9,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
 import servers from './AboutContent';
+import { Helmet } from 'react-helmet';
 const useStyles = makeStyles((theme) => ({
     box: {
         width: '100%',
@@ -21,6 +22,9 @@ export default function About() {
     const classes = useStyles();
     return (
         <>
+            <Helmet>
+                <title>MCJabko.cz &bull; O nás</title>
+            </Helmet>
             <Navbar />
             <Header />
             <Grid container>

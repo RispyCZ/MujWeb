@@ -5,6 +5,7 @@ import Footer from '../../Components/Footer';
 import Header from '../../Components/Header'
 import { Grid, Typography, Paper, List, ListItem, ListItemText, Container } from '@material-ui/core';
 import rules from './RulesContent';
+import { Helmet } from 'react-helmet';
 
 const useStyles = makeStyles((theme) => ({
     box: {
@@ -18,6 +19,9 @@ export default function Rules() {
     const classes = useStyles();
     return (
         <>
+            <Helmet>
+                <title>MCJabko.cz &bull; Pravidla</title>
+            </Helmet>
             <Navbar />
             <Header />
             <Typography variant="h3" align="center">Pravidla</Typography>

@@ -11,6 +11,7 @@ import HowJoin from './HowJoin';
 import Commands from './Commands';
 import Header from '../../Components/Header';
 import LWC from './LWC';
+import { Helmet } from 'react-helmet';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -67,8 +68,11 @@ export default function Wiki() {
 
     return (
         <>
+            <Helmet>
+                <title>MCJabko.cz &bull; Wiki</title>
+            </Helmet>
             <Navbar />
-            <Header/>
+            <Header />
             <Typography variant="h3" align="center">Wiki</Typography>
             <div className={classes.root}>
                 <Tabs
@@ -88,10 +92,10 @@ export default function Wiki() {
                     <HowJoin />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <Commands/>
+                    <Commands />
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    <LWC/>
+                    <LWC />
                 </TabPanel>
             </div>
             <Footer />
