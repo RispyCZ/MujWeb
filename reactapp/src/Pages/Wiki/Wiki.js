@@ -25,7 +25,7 @@ function TabPanel(props) {
         >
             {value === index && (
                 <Box p={3}>
-                    <Typography>{children}</Typography>
+                    <Typography component="div">{children}</Typography>
                 </Box>
             )}
         </div>
@@ -71,7 +71,6 @@ export default function Wiki() {
             <Header/>
             <Typography variant="h3" align="center">Wiki</Typography>
             <div className={classes.root}>
-
                 <Tabs
                     orientation="vertical"
                     variant="scrollable"

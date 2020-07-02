@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
     const classes = useStyles()
 
-    function copyToClipboard() {
+    const copyToClipboard = () => {
         const textarea = document.createElement("TEXTAREA");
         textarea.innerHTML = "mc.mcjabko.cz";
         textarea.setAttribute("id", "ip");

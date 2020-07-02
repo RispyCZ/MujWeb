@@ -31,10 +31,9 @@ export default function Faq() {
             <Container>
                 <Paper className={classes.box}>
                     {faq.map((item) => {
-                        const { index, question, answer } = item;
+                        const {index, question, answer } = item;
                         return (
-                            <>
-
+                            <div key={index}>
                                 <ExpansionPanel TransitionProps={{ unmountOnExit: true }}>
                                     <ExpansionPanelSummary expandIcon={<ExpandIcon />} aria-controls={index + "-content"} id={index + "-header"}>
                                         <Typography>{index + ". " + question}</Typography>
@@ -43,9 +42,7 @@ export default function Faq() {
                                         <Typography className={classes.answer}>{answer}</Typography>
                                     </ExpansionPanelSummary>
                                 </ExpansionPanel>
-
-
-                            </>
+                            </div>
                         );
 
                     })

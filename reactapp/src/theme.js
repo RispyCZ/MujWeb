@@ -14,7 +14,7 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: "Montserrat",
+    fontFamily: 'Comfortaa',
     h1: {
       fontSize: '2.8rem',
       '@media (min-width:600px)': {

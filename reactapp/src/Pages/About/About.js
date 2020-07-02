@@ -63,9 +63,9 @@ export default function About() {
                     <Typography variant="h3" style={{ textAlign: "center" }}>Technické zázemí</Typography>
                     <Grid item container spacing={2}>
                         {servers.map((item) => {
-                            const { name, cpu, ram, disk } = item;
+                            const { index, name, cpu, ram, disk } = item;
                             return (
-                                <Grid item xs={12} sm={4}>
+                                <Grid key={index} item xs={12} sm={4}>
                                     <Paper className={classes.box}>
                                         <FontAwesomeIcon icon={faServer} size="5x" style={{ display: "block", margin: "auto" }} />
                                         <Typography variant="h4" align="center">{name}</Typography>
