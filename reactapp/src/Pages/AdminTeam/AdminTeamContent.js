@@ -25,7 +25,7 @@ const Admins = [
         description: "Jsem přátelská osoba, které nedělá problem najít kompromis na každý problem. Nenechám se ale přemlouvat a me slovo bude v debatě vždy nakonec konečné. Mám velice špatný humor a ne každý ho pochopí, když se ale člověk chvilku kouká, zjisti ze se dá semnou dobre popovídat. Řídím se jednoduchým heslem: ,,Tak jak ty ke mne, já k tobě.” Jelikož nejsem žádný hej ani počkej.",
     },
     {
-        nickname: "clapek_z_slcity/Jirka",
+        nickname: "chlapek_z_slcity",
         position: "Support",
         description: "Jsem od toho abych tady pomáhal a řešit vaše problémy na serveru. Budu rád když se na mě s čímkoliv obrátíte.",
     },
