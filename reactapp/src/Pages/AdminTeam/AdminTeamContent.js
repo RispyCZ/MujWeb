@@ -5,14 +5,14 @@ const Admins = [
         description: "Člověk bez života (No lifer), který se celé dny hraje s Linuxem a tvoří weby :)",
     },
     {
-        nickname: "Gryllen",
-        position: "Admin",
-        description: 'Technická podpora aka" Hello, this is Raj from India, welcome to our call support!"',
-    },
-    {
         nickname: "AlexaVanBeast",
         position: "Hlavní Adminka",
         description: "Jsem vedoucí jednotka celého A-týmu.Mám na starost funkci serveru a hráčské komunity. Funguji spravedlivě a s dostatečnou rozvahou. Též, so called Hydra",
+    },
+    {
+        nickname: "Gryllen",
+        position: "Admin",
+        description: 'Technická podpora aka" Hello, this is Raj from India, welcome to our call support!"',
     },
     {
         nickname: "Zero_NoK",
@@ -29,6 +29,11 @@ const Admins = [
         position: "Support",
         description: "Jsem od toho abych tady pomáhal a řešit vaše problémy na serveru. Budu rád když se na mě s čímkoliv obrátíte.",
     },
+    {
+        nickname: "monokl99",
+        position: "Support",
+        description: "Jsem dalším článkem našeho rozmanitého admin týmu. Kdykoliv nabídnu pomocnou ruku či ráda naskočím na možnost rokovat o čemkoliv. Mimo kostičkový svět ráda sleduji seriály, zkoumám nová místa a bojuji za práva anananasu na pizze.",
+    }
 ];
 
 export default Admins;
