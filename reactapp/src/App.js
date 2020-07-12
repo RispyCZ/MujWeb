@@ -6,12 +6,11 @@ import { WbSunny as SunIcon, Brightness2 as MoonIcon } from '@material-ui/icons'
 import Cookies from 'universal-cookie';
 
 function App() {
-    const cookies = new Cookies();
-    const cookieState = cookies.get('darkTheme') === 'true' ? true : false;
-    const [darkTheme, setdarkTheme] = useState(cookieState)
+    const [darkTheme, setdarkTheme] = useState(localStorage.getItem('darkmode') == 'true' ? true : false)
+    console.log(darkTheme)
     const ChangeTheme = () => {
         setdarkTheme(!darkTheme)
-        cookies.set('darkTheme', !darkTheme, { path: '/' });
+        localStorage.setItem('darkmode', !darkTheme)
     }
     const theme = createMuiTheme({
         palette: {
@@ -52,7 +51,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Suspense fallback="Načítám">
-                <Button style={{ position: 'fixed', bottom: '10px', left: '10px' }} onClick={ChangeTheme} variant="contained" color="primary">{darkTheme ? <MoonIcon /> : <SunIcon />}</Button>
+                <Button style={{ position: 'fixed', bottom: '10px', left: '10px' }} onClick={ChangeTheme} variant="contained" color="primary">{darkTheme ? <SunIcon /> : <MoonIcon />}</Button>
                 <Routes />
             </Suspense>
         </ThemeProvider>
